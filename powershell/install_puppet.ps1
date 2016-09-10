@@ -5,4 +5,4 @@ wget https://downloads.puppetlabs.com/windows/puppet-agent-x64-latest.msi -OutFi
 
 Start-Process -Wait -FilePath "msiexec.exe" -ArgumentList "/qn", "/norestart", "/i", "$setupDir\puppet-agent-x64-latest.msi", "PUPPET_MASTER_SERVER=puppet"
 
-puppet module install puppetlabs/windows
+& 'C:\Program Files\Puppet Labs\Puppet\bin\puppet.bat' module install puppetlabs/windows
