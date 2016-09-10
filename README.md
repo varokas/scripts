@@ -5,7 +5,7 @@ A repository of remote executable scripts
 
 Execution Policy
 
-    Set-ExecutionPolicy RemoteSigned
+    Set-ExecutionPolicy Unrestricted -Force
 
 Scripts
 
